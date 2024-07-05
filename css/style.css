@@ -1,0 +1,1003 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 5600px;
+}
+.home{
+    height: 100vh;
+    width:100% ;
+   height: 100vh;
+   background-image: url(../img/back3.jpg);
+   background-size: 100% 100%;
+   position: relative
+   
+}
+.home-overlay{
+    background-color: rgba(0, 0, 0,0.1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: #24126bb8;
+    z-index: 10;
+    position: fixed;
+    
+}
+.header-imge{
+    width: 80px;
+    height: 60px;
+    float: left;
+    margin-left: 100px;
+    border-radius: 5px;
+}
+.header-lista{
+    list-style: none;
+    float: right;
+    margin-right: 80px;
+}
+.header-lista li{
+    display: inline-block;
+    margin-top: 16px;
+}
+.header-lista li a{
+    text-decoration: none;  
+    color: white;
+    font-size: 21px;
+    margin-left: 30px;
+}
+.hover-lista{
+    position: relative;
+
+}
+.hover-lista::after{
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 3px;
+
+    left: 0;
+    bottom: 0;
+
+    background-color: #cf8a24;
+    opacity: 0;
+    transition: 1s;
+
+
+}
+
+   .hover-lista:hover::after{
+    width: 100%;
+    height: 3px;
+    opacity: 1;
+
+   } 
+    
+
+
+.header-content{
+    width: 60%;
+    color:white;
+      text-align: center;
+      position: absolute;
+      
+      /*heroimage*/
+      top: 50%;
+      left: 50%;
+     z-index: 11;
+       transform: translate(-50%,-50%);
+      -webkit-transform: translate(-50%,-50%);
+      -moz-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      -o-transform: translate(-50%,-50%);
+}
+.header-content h2{
+ font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  font-style: normal;
+  text-transform: capitalize;
+
+}
+.header-content p {
+    padding: 12px;
+}
+.header-content .btn{
+    
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: #cf8a24;
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+
+.btn:hover{
+     background-color: rgba(207, 138, 36, 0.8);
+    color: white;
+    
+}
+.body-welcome{
+    height: 80vh;
+}
+.welcome-title {
+    font-size: 30px;
+    text-align: center;
+    font-family: "Playwrite AU SA", cursive;
+    color: black;
+    font-weight: 200px;
+    font-style: normal;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.welcome-line{
+    width: 120px;
+    height: 2px;
+    background-color: #cf8a24;
+    margin: auto;
+    margin-top: 10px;
+}
+.welcome-container{
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+
+}
+.welcome-parent{
+  
+    overflow: auto;
+    text-align: center;
+}
+.welcome-item1{
+    width: 30%;
+    float: left;
+    border: 1px solid #cf8a24;
+    background-color: #607D8B;
+    color: white;
+    padding: 20px 15px;
+    position: relative;
+}
+.welcome-item2{
+    margin: 0 5%;
+}
+   
+
+
+.welcome-icons{
+     color: #cf8a24;
+     font-size: 27px;
+}
+.welcome-item1 h2 {
+    padding: 20px 0 10px 0;
+    font-size: 27px;
+    text-transform: capitalize;
+}   
+.welcome-item1 p {
+    margin-bottom: 20px;
+    font-size: 14px;
+   
+}
+.welcome-item1 a{
+    text-decoration: none;
+    color: #cf8a24;
+    font-size: 24px;
+    text-transform: capitalize;
+} 
+.welcome-item1::after{
+  
+ position: absolute;
+ content: "";
+
+ width: 0;
+ height: 0;
+
+ left: 0;
+ top: 0;
+
+ visibility: hidden;
+
+ background-color:#cf8a24;
+opacity: 0;
+z-index: -2;
+ 
+
+   
+}
+
+.welcome-item1:hover::after{
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    transition: 2s;
+    
+}
+.welcome-item1:hover{
+    background-color: rgba(126, 151, 171, 0);
+    border: 1px solid black;
+   }
+   .welcome-item1:hover .hover{
+    color: black;
+   }
+   .welcome-item1:hover .welcome-icons{
+    color: rgb(148, 85, 207);
+}
+/* //////// */
+
+.body-featured{
+    height: 100vh;
+
+}
+.title-featured{
+    font-size: 30px;
+    text-align: center;
+    font-family: "Playwrite AU SA", cursive;
+    color: black;
+    font-weight: 200px;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+.line-featured{
+    width: 70px ;
+    margin: auto;
+    height: 3px;
+    background-color:#cf8a24;
+}
+.contianer-featured{
+    width: 80%;
+    margin: auto;
+}
+.parent-featured{
+overflow: auto;
+
+margin-top: 60px;
+}
+.item1-featured{
+    width: 30%;
+    float: left;
+ 
+ 
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 18px 12px;
+    position: relative;
+
+}
+.item-featured-margin {
+    margin: 0 5%;
+}
+.item1-featured img {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+.item-featured-content{
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+visibility: hidden;  
+z-index: 4;
+
+}
+
+.item1-featured:hover .item-featured-content {
+    visibility: visible;
+ 
+}
+.item1-featured::after{
+position: absolute;
+content: "";
+
+width: 100%;
+height: 100%;
+
+top: 0;
+left: 0;
+
+
+background-color: rgba(0, 0, 0, 0);
+
+visibility: hidden;
+
+
+}
+.item1-featured:hover::after {
+
+ visibility: visible;
+ transition-duration: 1s;
+ background-color: rgba(0,0,0, 0.7);
+
+
+}
+.item-featured-content p{
+    /* margin-top: -10px; */
+    color:#6fb6ce;
+    font-size: 19px;
+}
+.item-featured-content h2{
+    padding: 20px 0;
+    color: white;
+    font-weight: bold;
+
+}
+.item-featured-content div a  {
+
+    width: 40px;
+    height: 40px;
+    background-color: #61a4d7;
+    color: white;
+    padding: 10px;
+    font-size: 19px;
+
+
+}
+/* what */
+
+
+.body-what{
+    height: 100vh;
+   
+    
+   }
+   .title-what{
+       text-align: center;
+       font-size: 29px;
+       font-family: "Playwrite AU SA", cursive;
+       color:rgb(31, 29, 29);
+       font-weight: 200px;
+       font-style: normal;
+       margin: 70px 0 10px 0;
+   }
+   .line-what{
+       background-color:#cf8a24 ;
+       width: 70px;
+       height: 2px;
+       margin: auto;
+   margin-bottom: 50px;
+   }
+   .container-what{
+       width: 80%;
+       margin: auto;
+   }
+   .parent-what{
+       overflow: auto;
+     
+   }
+   .item-what {
+       width: 30%;
+       padding: 17px 14px;
+       float: left;
+       background-color: rgb(204 198 183 / 74%);
+       
+       text-align: center;
+       margin-bottom: 20px;
+       border: 1px solid black;
+       position: relative;
+       
+   }
+   
+   .item-what-margin{
+       margin: 0 5%;
+   }
+   .item-what i{
+   
+       font-size: 25px;
+       color: rgb(148, 85, 207);
+   }
+   .item-what h2{
+       color:#3b609b;
+       font-size: 28px;
+       padding: 10px 0 15px  0;
+   }
+   .item-what::after{
+       position: absolute;
+   content: "";
+   
+   width: 0;
+   height: 0;
+   
+   top: 0;
+   left: 0;
+   
+   
+   background-color: rgba(0, 0, 0, 0);
+   
+   visibility: hidden;
+   z-index: -3;
+   }
+   .item-what:hover::after{
+       width: 100%;
+       height: 100%;
+       visibility: visible;
+       background-color: rgb(212, 189, 146,0.6);
+       transition: 2s;
+   }
+   .item-what:hover h2{
+       color:#319bc1;
+       transition-duration: 2s ;
+   }
+   .item-what:hover {
+       background-color: rgb(204, 198 , 183 , 0 );
+       transition-duration: 2s;
+   }
+   .item-what:hover p{
+      
+       transition-duration: 2s;
+   }
+   .item-what i{
+       position: absolute;
+       top: 33px;
+       left: 27px;
+   }
+   
+
+
+/* /////////////body why/////////// */
+.body-why{
+    height: 60vh;
+    margin-bottom: 100px;
+
+}
+.container-why{
+    width: 80%;
+    margin: auto;
+    margin-top: -20px;
+}
+.parent-why{
+overflow: auto;
+
+}
+.item-why{
+   
+ float: left;
+width: 48%;
+  
+}
+.heading-why{
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.heading-item-why{
+
+    font-size: 48px;
+    
+    color:rgb(31, 29, 29);
+    font-weight: 200px;
+    font-style: normal;
+}
+.line-item-why{
+    width: 80px;
+    height: 4px;
+    background-color: #cf8a24;
+}
+.img-why{
+    width: 400px;
+
+    margin-left: 120px;
+}
+   
+.lista-item-why{
+    margin-top: 70px;
+}
+.p-item-why{
+    margin-top: 40px;
+    color: #1c5f72;
+    font-size: 23px;
+}
+
+.li-list-why{
+    margin: 10px 0;
+    color: #2f2f31;
+    font-size: 17px;
+}
+.li-list-why i {
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #cf8a24;
+}
+
+.lista-img-2{
+    list-style-type: none;
+    text-align: center;
+}
+.lista-img-2 li {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #a8a8a8;
+    border-radius: 50%;
+    margin: 10px 5px;
+}
+ .lista-img-2 .active{
+    background-color:#cf8a24;
+
+}
+.body-icons{
+    height: 350px;
+    background-image: url(../img/finsh.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+ position: relative;
+}
+.overlay-icons{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.container-icons {
+    width: 80%;
+    margin: auto;
+}
+.content-icons{
+    overflow: auto;
+   margin-top: 130px;
+}
+.item1-icons{
+    float: left;
+   
+    width: 25%;
+    text-align: center;
+
+}
+.item1-icons i {
+    color:#cf8a24;
+    font-size: 34px;
+
+}
+.item1-icons h3{
+    color: white;
+    font-size: 27px;
+    padding-top: 10px;
+}
+.item1-icons span {
+    color: white;
+    font-size: 20px;
+    padding-top: 5px;
+}
+.table-body{
+    height: 100vh;
+}
+.title-table{
+    text-align: center;
+   
+    color:rgb(31, 29, 29);
+ font-family: "Playwrite MX", cursive;
+  font-style: normal;
+  font-size: 35px;
+  margin-top: 20px;
+}
+.p-table{
+    background-color: #cf8a24;
+    width: 90px;
+    height: 2px;
+    margin: auto;
+    margin-top: 10px;
+}
+.container-table{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+.parent-table{
+
+    overflow: auto;
+    
+}
+.item-table {
+  float: left;
+   width: 30%;
+   text-align: center;
+   padding: 17px 12px;
+   border: 1px solid #cf8a24;
+   background-color: #c4bbadbd;  
+    position: relative;
+}
+
+.item-table-2{
+    margin: 0 5%;
+}
+.item-table .table-title-span{
+    font-size: 26px;
+    color:#3b609b;
+    text-transform: capitalize;
+   
+}
+.price-matlab{
+    width: 79px;
+    border: 1px solid #cf8a24;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 21px;
+    margin-top: 35px;
+    color: rgb(166, 103, 51);
+}
+.price-matlab h3{
+    font-size: 31px;
+   
+}
+.lista-matlab{
+    list-style: none;
+}
+.lista-matlab li{
+    padding: 6px;
+    color:rgb(59, 55, 55); 
+ 
+}
+.item-table button{
+    margin-top: 20px;
+    padding: 6px;
+/*  
+
+   color: #7e5311; */
+   border:  1px solid #cf8a24;
+   color: #673ab7;
+
+}
+
+.item-table::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    visibility: hidden;
+
+
+}
+
+.item-table:hover::after{
+    visibility: visible;
+    transition-duration: 3s;
+    width: 100%;
+    height: 100%;
+}
+
+/* our team */
+.body-our{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.our-title{
+    margin-top: 0px;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Playwrite AU SA", cursive;
+    color: black;
+    font-weight: 200px;
+    font-style: normal;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.our-line{
+    width: 90px;
+    height: 2px;
+    background-color:#cf8a24;
+    margin: auto;
+    margin-bottom: 70px;
+}
+.our-container{
+    width: 80%;
+    margin: auto;
+}
+.our-parent{
+    overflow: auto;
+   
+}
+.our-item1{
+    width: 30%;
+    text-align: center;
+    background-color: rgb(204 198 183 / 74%);
+    float: left;
+    padding: 12px 16px;
+    position: relative;
+}
+.our-item2{
+    margin: 0 5%;
+}
+.our-item1-img{
+    width: 90%;
+ 
+   position: relative;
+    margin: auto;
+   
+}
+.our-item1-img img{
+    width: 100%;  
+    
+}
+.our-overlay{
+    position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0,0.4);
+   visibility: hidden;
+}
+
+.our-item1:hover .our-overlay {
+    visibility: visible;
+}
+
+.our-overlay a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #61a4d7;
+    color: white;
+    font-size: 19px;
+    line-height: 40px;
+    margin-left: auto;
+}
+.our-overlay a i{
+    line-height: 40px;
+}
+.our-item1-info h2{
+   padding: 11px 0;
+   text-transform: capitalize;
+   color:#6fb6ce;
+  
+}
+.our-item1-info p{
+    color: black;
+    font-size: 18px;
+}
+.our-item1:hover .our-item1-info-title {
+    color:#cf8a24;
+}
+.our-item1:hover .our-item-info-p {
+    color: white;
+}
+.our-item1::after{
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 0;
+
+    top:0;
+    left: 0;
+
+    background-color: black;
+
+    opacity: 0;
+
+
+}
+
+.our-item1:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    transition: 2s;
+}
+
+
+
+.back-body{
+    width: 100%;
+    height: 350px;
+    background-image: url(../img/trr2.webp);
+    box-sizing: border-box;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+ .overlay-back{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+} 
+
+
+
+
+
+.contaoner-back{
+    width: 80%;
+    margin: auto;
+}
+
+.parent-back{
+    overflow: auto;
+}
+
+.item-back{
+    float: left;
+    width: 40%;
+    margin-top: 130px;
+    text-align: center;
+      
+    position: relative;
+    padding: 20px 14px;
+}
+.item-back-2{
+    margin-left: 7%;
+}
+.img-back{
+    position: absolute;
+    top: 7px;
+    left: 45px;
+    width: 67px;
+    height: 70px;
+    border-radius: 50%;
+}
+.info-p-back{
+    margin-top: 30px;
+    color: wheat;
+}
+.content-back h2{
+    color: #b951cb;
+    font-size: 25px;
+    margin-bottom: 6px;
+}
+.content-back span{
+    color: white;
+    font-size: 18px;
+}
+
+
+.body-recent{
+    height: 125vh;
+
+}
+
+.title-recent{
+    text-align: center;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Playwrite AU SA", cursive;
+    color: rgb(62, 57, 57);
+    font-weight: 200px;
+    font-style: normal;
+}
+.line-recent{
+    background-color: #cf8a24;
+    margin: auto;
+    height: 2px;
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+.container-recent{
+    width: 80%;
+    margin: auto;
+}
+.parent-recent{
+    overflow: auto;
+ 
+}
+.item-recent{
+    float: left;
+    width: 30%;
+    background-color: #c4bbad;
+    position: relative;
+}
+
+.item-recent-2{
+    margin: 0 5%;
+}
+
+.item-recent img{
+    width: 100%;
+   
+}
+
+
+.lista-recent{
+    list-style-type: none;
+    margin: 40px 0;
+
+}
+.lista-recent li{
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 12px;
+    color:#673ab7;
+   
+}
+.lista-recent li i{
+    color: #000;
+}
+.heading-recent{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color:#673ab7;
+}
+.p-recent{
+    margin-bottom: 30px;
+}
+.link-recent{
+    text-decoration: none;
+    font-size: 18px;
+}
+.item-recent::after{
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 3s;
+    visibility: hidden;
+}
+.item-recent:hover::after{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+}
+
+.footer{
+    width: 100%;
+    height: 330px;
+    background-color: #6e6b65ab;
+    text-align: center;
+    margin-top: 86px;
+}
+.img-footer{
+    margin-top: 60px;
+}
+
+
+.lisat-footer{
+     list-style-type: none;
+     margin-top: 20px;
+    
+}
+.lisat-footer li{
+    display: inline-block;
+
+}
+.lisat-footer li a{
+    font-size: 23px;
+    background-color: #4483b3;
+    color: white;
+    padding: 10px;
+
+    border-radius: 50%;
+    
+}
+
+.fotootr-para{
+    color: black;
+    margin-top: 18px;
+    font-size: 20px;
+}
